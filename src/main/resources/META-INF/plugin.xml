@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.example.DarkPinkTheme</id>
+    <name>Dark Pink Theme</name>
+    <description>Плагин для смены темы интерфейса на темно-розовую</description>
+    <version>1.0</version>
+    <vendor>Example</vendor>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider
+                id="com.example.DarkPinkTheme"
+                path="/themes/darkPinkTheme.theme.json"/>
+    </extensions>
+
+    <actions>
+        <action id="DarkPinkThemePluginAction"
+                class="com.example.DarkPinkThemePlugin"
+                text="Activate Dark Pink Theme"
+                description="Активировать темно-розовую тему интерфейса">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
